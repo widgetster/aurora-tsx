@@ -3,7 +3,7 @@ import { Header } from './components/Header'
 import { FirstBlock } from './components/FirstBlock'
 import { SecondBlock } from './components/SecondBlock'
 import { ThirdBlock } from './components/ThirdBlock'
-
+import { Footer } from './components/Footer'
 
 function App() {
 
@@ -17,7 +17,12 @@ function App() {
         <SecondBlock />
 
         <ThirdBlock />
+
       </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </>
 
   )
