@@ -7,7 +7,7 @@
 .ftr-first-block{
     display: flex;
     justify-content: space-between;
-    width: 1300px;
+    width: min(var(--content-max-width), calc(100% - 2 * var(--page-gutter)));
     margin: 0 auto;
 }
 
@@ -60,6 +60,7 @@
     padding: 10px 18px;
     border-radius: 6px;
     border: none;
+    margin-right: 10px;
 }
 
 .ftr-subscribe-button{
@@ -81,4 +82,30 @@
     color: rgb(138, 138, 138);
     font-size: 8px;
     padding-bottom: 14px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 1200px){
+    .ftr-first-block{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px 32px;
+        padding-block: 16px;
+    }
+
+    .ftr-first-block > div:last-child{
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 600px){
+    .ftr-first-block{
+        grid-template-columns: 1fr;
+    }
+
+    .ftr-enter-email{
+        box-sizing: border-box;
+        width: min(200px, 100%);
+        max-width: calc(100% - 110px);
+    }
 }

@@ -1,7 +1,10 @@
+:root {
+    --page-max-width: 1920px;
+    --content-max-width: 1300px;
+    --page-gutter: 24px;
+}
+
 body{
     font-family: Poppins;
-    height: 1000px;
-    margin-top: 0;
-    margin-left:  0;
-    margin-right: 0;
+    margin: 0;
 }
