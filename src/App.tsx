@@ -1,11 +1,19 @@
 import './App.css'
 import { Header } from './components/Header'
+import { FirstBlock } from './components/FirstBlock'
 
 
 function App() {
 
   return (
-    <Header />
+    <>
+      <Header />
+
+      <main>
+        <FirstBlock />
+      </main>
+    </>
+
   )
 }
 
