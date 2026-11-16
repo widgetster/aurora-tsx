@@ -30,7 +30,7 @@ export function FirstBlock() {
           </div>
 
           <div className="mountain-img-container">
-            <img className="mountain-img" src="/picture/mountain.png" alt="Mountain landscape" />
+            <img className="mountain-img" src="./picture/mountain.png" alt="Mountain landscape" />
           </div>
         </div>
       </div>

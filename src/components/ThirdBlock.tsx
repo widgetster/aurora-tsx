@@ -11,7 +11,7 @@ export function ThirdBlock() {
 
         <div className="featured-projects-container">
           <div className="project-container">
-            <img className="project-img" src="/picture/travel.png" />
+            <img className="project-img" src="./picture/travel.png" />
               <p className="project-name-p">Travel Landing Page</p>
               <p className="project-description-p">A modern landing page for a travel agency.</p>
 
@@ -21,7 +21,7 @@ export function ThirdBlock() {
           </div>
 
           <div className="project-container">
-            <img className="project-img" src="/picture/banking.png" />
+            <img className="project-img" src="./picture/banking.png" />
               <p className="project-name-p">Banking Dashboard</p>
               <p className="project-description-p">Dashboard design for personal finance management.</p>
 
@@ -31,7 +31,7 @@ export function ThirdBlock() {
           </div>
 
           <div className="project-container">
-            <img className="project-img" src="/picture/ecommerce.png" />
+            <img className="project-img" src="./picture/ecommerce.png" />
               <p className="project-name-p">E-commerce Store</p>
               <p className="project-description-p">Online store for a modern lifestyle brand.</p>
 
@@ -41,7 +41,7 @@ export function ThirdBlock() {
           </div>
 
           <div className="project-container">
-            <img className="project-img" src="/picture/tech.png" />
+            <img className="project-img" src="./picture/tech.png" />
               <p className="project-name-p">Tech Blog</p>
               <p className="project-description-p">Clean and minimalist blog layout for tech enthusiasts.</p>
 

@@ -5,7 +5,7 @@ export function Header() {
     <header>
       <div className="header">
         <div className="left">
-          <img src="/icon/logo.png" />
+          <img src="./icon/logo.png" />
 
           <p>AURORA</p>
         </div>

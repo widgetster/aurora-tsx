@@ -9,17 +9,17 @@ export function Footer() {
       <div className="ftr-first-block">
         <div className="ftr-first-column-container">
           <div className="ftr-logo-name-container">
-            <img className="ftr-logo-name-img" src="/icon/logo.png" />
+            <img className="ftr-logo-name-img" src="./icon/logo.png" />
             <p>AURORA</p>
           </div>
 
           <p className="ftr-description-p">We craft digital experiences that help brands grow and succeed in the modern world.</p>
 
           <div className="ftr-soc-med-container">
-            <img src="/icon/facebook.png" />
-            <img src="/icon/instagram.png" />
-            <img src="/icon/linkedin.png" />
-            <img src="/icon/twitter.png" />
+            <img src="./icon/facebook.png" />
+            <img src="./icon/instagram.png" />
+            <img src="./icon/linkedin.png" />
+            <img src="./icon/twitter.png" />
           </div>
         </div>
 
