@@ -1,8 +1,8 @@
-import { Header } from "./components/Header"
+import { Header } from "../../components/Header"
 import { FirstBlock } from "./FirstBlock"
 import { SecondBlock } from "./SecondBlock"
 import { ThirdBlock } from "./ThirdBlock"
-import { Footer } from "./components/Footer"
+import { Footer } from "../../components/Footer"
 
 export function Home() {
 

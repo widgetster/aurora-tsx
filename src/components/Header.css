@@ -38,14 +38,11 @@
   transition: 3.25s;
 }
 
-.header .middle p:hover{
-  cursor: pointer;
-  transition: 0.25s;
-}
-
-.header .middle div:hover{
-  border-bottom: 1.5px solid #5B3FD6;
-  transition: 0.2s;
+.header .middle a.active{
+  text-decoration: underline;
+  text-decoration-color: #5B3FD6;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 6px;
 }
 
 

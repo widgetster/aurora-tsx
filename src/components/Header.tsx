@@ -1,5 +1,5 @@
 import './Header.css'
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 export function Header() {
   return (
@@ -16,12 +16,12 @@ export function Header() {
 
 
         <div className="middle">
-          <Link to="/">Home</Link>
-          <Link to="/about"> About</Link>
-          <Link to="/services"> Services</Link>
-          <Link to="/services"> Portfolio</Link>
-          <Link to="/blog"> Blog</Link>
-          <Link to="/contact"> Contact</Link>
+          <NavLink to="/" end>Home</NavLink>
+          <NavLink to="/about"> About</NavLink>
+          <NavLink to="/services"> Services</NavLink>
+          <NavLink to="/portfolio"> Portfolio</NavLink>
+          <NavLink to="/blog"> Blog</NavLink>
+          <NavLink to="/contact"> Contact</NavLink>
 
         </div>
 
