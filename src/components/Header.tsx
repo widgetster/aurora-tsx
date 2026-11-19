@@ -1,7 +1,9 @@
 import './Header.css'
+import {Link} from 'react-router';
 
 export function Header() {
   return (
+
     <header>
       <div className="header">
         <div className="left">
@@ -11,12 +13,13 @@ export function Header() {
         </div>
 
         <div className="middle">
-          <div><p>Home</p></div>
-          <div><p>About</p></div>
-          <div><p>Services</p></div>
-          <div><p>Portfolio</p></div>
-          <div><p>Blog</p></div>
-          <div><p>Contact</p></div>
+          <Link to="/">Home</Link>
+          <Link to="/about"> About</Link>
+          <Link to="/services"> Services</Link>
+          <Link to="/services"> Portfolio</Link>
+          <Link to="/blog"> Blog</Link>
+          <Link to="/contact"> Contact</Link>
+      
         </div>
 
         <div className="right">
@@ -24,6 +27,7 @@ export function Header() {
         </div>
       </div>
     </header>
+
   )
 
 }

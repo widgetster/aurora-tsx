@@ -1,0 +1,64 @@
+/* SECOND BLOCK ABSOLUTE */
+.second-block{
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  margin: -59px auto 0 auto;
+  box-sizing: border-box;
+  height: 118px;
+
+  width: min(var(--content-max-width), calc(100% - 2 * var(--page-gutter)));
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);    
+}
+
+.second-block .container{
+  display: flex;
+  align-items: center;
+}
+
+.second-block .container img{
+  height: 50px;
+  width:  50px;
+  object-fit: contain;
+  border-radius: 200px;
+  background-color: rgb(231, 229, 243);
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.feature-description .feature-p{
+  font-weight: 600;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.feature-description .description-p{
+  font-size: 12px;
+  width: 200px;
+  color: rgb(138, 138, 138);
+  font-family: Inter;
+}
+
+@media (max-width: 1200px){
+  .second-block{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 32px;
+    height: auto;
+    padding: 24px;
+  }
+
+  .feature-description .description-p{
+    width: auto;
+  }
+}
+
+@media (max-width: 600px){
+  .second-block{
+    grid-template-columns: 1fr;
+  }
+}

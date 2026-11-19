@@ -1,97 +1,97 @@
 /* HEADER */
 .header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 70px;
-    max-width: var(--page-max-width);
-    margin-inline: auto;
-    /* box-shadow: inset 1px -2px 4px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  max-width: var(--page-max-width);
+  margin-inline: auto;
+  /* box-shadow: inset 1px -2px 4px rgba(0, 0, 0, 0.1); */
 }
 
 .header .left img{
-    height: 80px;
-    border-radius: 100px;
-    
+  height: 80px;
+  border-radius: 100px;
+  
 }
 
 .header .left{
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 23px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 23px;
 }
 
 .header .left:hover{
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .header .middle{
-    display: flex;
-    align-items: center;
-    column-gap: 45px;
-    transition: 3.25s;
+  display: flex;
+  align-items: center;
+  column-gap: 45px;
+  transition: 3.25s;
 }
 
 .header .middle p:hover{
-    cursor: pointer;
-    transition: 0.25s;
+  cursor: pointer;
+  transition: 0.25s;
 }
 
 .header .middle div:hover{
-    border-bottom: 1.5px solid #5B3FD6;
-    transition: 0.2s;
+  border-bottom: 1.5px solid #5B3FD6;
+  transition: 0.2s;
 }
 
 
 .header .right button{
-    border: none;
-    background-color: rgb(91, 91, 255);
-    border-radius: 6px;
-    padding: 13px 26px;
-    font-size: 20px;
-    color: white;
-    font-size: 16px;
+  border: none;
+  background-color: rgb(91, 91, 255);
+  border-radius: 6px;
+  padding: 13px 26px;
+  font-size: 20px;
+  color: white;
+  font-size: 16px;
 }
 
 .header .right button:hover{
-    cursor: pointer;
-    background-color: rgba(91, 63, 214,0.7);
-    transition: 0.25s;
+  cursor: pointer;
+  background-color: rgba(91, 63, 214,0.7);
+  transition: 0.25s;
 }
 
 @media (max-width: 1100px){
-    .header{
-        box-sizing: border-box;
-        height: auto;
-        min-height: 70px;
-        padding: 12px var(--page-gutter);
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 12px;
-    }
+  .header{
+    box-sizing: border-box;
+    height: auto;
+    min-height: 70px;
+    padding: 12px var(--page-gutter);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+  }
 
-    .header .middle{
-        order: 3;
-        flex-basis: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 0 24px;
-    }
+  .header .middle{
+    order: 3;
+    flex-basis: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 24px;
+  }
 
-    .header .left img{
-        height: 60px;
-    }
+  .header .left img{
+    height: 60px;
+  }
 }
 
 @media (max-width: 480px){
-    .header .middle{
-        column-gap: 16px;
-        font-size: 13px;
-    }
+  .header .middle{
+    column-gap: 16px;
+    font-size: 13px;
+  }
 
-    .header .right button{
-        padding: 12px 16px;
-        font-size: 14px;
-    }
+  .header .right button{
+    padding: 12px 16px;
+    font-size: 14px;
+  }
 }
