@@ -1,16 +1,19 @@
 import './Header.css'
-import {Link} from 'react-router';
+import { Link } from 'react-router';
 
 export function Header() {
   return (
 
     <header>
       <div className="header">
-        <div className="left">
-          <img src="./icon/logo.png" />
+        <Link to="/">
+          <div className="left">
+            <img src="./icon/logo.png" />
 
-          <p>AURORA</p>
-        </div>
+            <p>AURORA</p>
+          </div>
+        </Link>
+
 
         <div className="middle">
           <Link to="/">Home</Link>
@@ -19,7 +22,7 @@ export function Header() {
           <Link to="/services"> Portfolio</Link>
           <Link to="/blog"> Blog</Link>
           <Link to="/contact"> Contact</Link>
-      
+
         </div>
 
         <div className="right">
