@@ -26,7 +26,7 @@ export function Header() {
         </div>
 
         <div className="right">
-          <button>Get Started</button>
+          <Link className="get-started-button" to="/contact">Get Started</Link>
         </div>
       </div>
     </header>

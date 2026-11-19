@@ -1,5 +1,6 @@
 import './App.css'
-import { Routes, Route } from 'react-router';
+import { useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router';
 import { Home } from './pages/home/Home';
 import { About } from './About'
 import { Services } from './Services'
@@ -9,6 +10,12 @@ import { Contact } from './Contact'
 
 
 function App() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
   return (
     <Routes>
       <Route index element={<Home />} />
