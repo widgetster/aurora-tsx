@@ -1,64 +1,57 @@
-/* SECOND BLOCK ABSOLUTE */
-.second-block{
+.second-block {
   position: relative;
-  z-index: 10;
-  display: flex;
-  justify-content: space-around;
-  margin: -59px auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--layout-gap);
+  width: var(--layout-width);
+  margin: calc(-1 * var(--feature-overlap)) auto 0;
+  padding: clamp(1rem, 2vw, 3rem);
   box-sizing: border-box;
-  height: 118px;
-
-  width: min(var(--content-max-width), calc(100% - 2 * var(--page-gutter)));
+  border: 1px solid #eeedf5;
+  border-radius: 10px;
   background-color: white;
-  border: none;
-  border-radius: 6px;
-  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);    
+  box-shadow: 0 4px 16px rgb(23 27 45 / 8%);
 }
 
-.second-block .container{
+.second-block .container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  gap: clamp(0.75rem, 1vw, 1.5rem);
 }
 
-.second-block .container img{
-  height: 50px;
-  width:  50px;
+.second-block .container img {
+  flex: none;
+  width: clamp(2.75rem, 3.4vw, 4.5rem);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #e7e5f3;
   object-fit: contain;
-  border-radius: 200px;
-  background-color: rgb(231, 229, 243);
-  margin-right: 15px;
-  flex-shrink: 0;
 }
 
-.feature-description .feature-p{
+.feature-p {
+  margin: 0 0 0.3em;
+  color: #171b2d;
+  font-size: clamp(0.9375rem, 0.84rem + 0.2vw, 1.375rem);
   font-weight: 600;
-  margin-bottom: 0;
-  font-size: 14px;
+  line-height: 1.35;
 }
 
-.feature-description .description-p{
-  font-size: 12px;
-  width: 200px;
-  color: rgb(138, 138, 138);
-  font-family: Inter;
+.description-p {
+  margin: 0;
+  color: #55596d;
+  font-family: Inter, sans-serif;
+  font-size: clamp(0.875rem, 0.74rem + 0.22vw, 1.25rem);
+  line-height: 1.5;
 }
 
-@media (max-width: 1200px){
-  .second-block{
-    display: grid;
+@media (max-width: 66rem) {
+  .second-block {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px 32px;
-    height: auto;
-    padding: 24px;
-  }
-
-  .feature-description .description-p{
-    width: auto;
   }
 }
 
-@media (max-width: 600px){
-  .second-block{
-    grid-template-columns: 1fr;
+@media (max-width: 36rem) {
+  .second-block {
+    grid-template-columns: minmax(0, 1fr);
   }
 }

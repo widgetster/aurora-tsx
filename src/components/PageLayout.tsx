@@ -13,7 +13,7 @@ type PageLayoutProps = {
 
 export function PageLayout({ label, title, intro, children }: PageLayoutProps) {
   return (
-    <div className="studio-layout">
+    <div className="site-layout">
       <title>{`${label} | Aurora`}</title>
       <Header />
 

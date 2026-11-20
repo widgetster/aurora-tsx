@@ -1,130 +1,114 @@
-/* FIRST BLOCK */
-.first-block-bg{
-  position: relative;
-  z-index: 0;
-  background-color: rgb(231, 229, 243);
-}
-
-/* Keep the hero at the reference layout's width on larger monitors. */
-.first-block-content{
+.home-page {
+  --feature-overlap: clamp(1.5rem, 2.6vw, 4rem);
   display: flex;
-  align-items: stretch;
-  width: 100%;
-  max-width: var(--page-max-width);
+  flex-direction: column;
+}
+
+.first-block-bg {
+  background-color: #e7e5f3;
+}
+
+.first-block-content {
+  --hero-padding: clamp(2.25rem, min(3vw, 5vh), 4rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  align-items: center;
+  gap: clamp(1.5rem, 3.2vw, 6rem);
+  width: var(--layout-width);
   margin-inline: auto;
-  box-sizing: border-box;
-  padding-left: clamp(40px, 10.5vw, 200px);
+  padding-block: var(--hero-padding) calc(var(--hero-padding) + var(--feature-overlap));
 }
 
-.mountain-img-container{
-  position: relative;
-  flex: 1;
-  min-width: 0;
-  overflow: hidden;
-}
-
-.mountain-img{
-  position: absolute;
-  inset: 0;
+.mountain-img {
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
+  justify-self: center;
+  width: min(100%, calc(clamp(21rem, 47vh, 38rem) * 1536 / 937));
+  height: auto;
 }
 
-.first-block{
-  flex: 0 1 600px;
-  box-sizing: border-box;
-  padding-top: 40px;
-  padding-right: 60px;
-  padding-bottom: 100px;
-}
-
-.first-block .build-p{
-  color: #5B3FD6;
-  font-size: 14px;
-}
-
-.first-block .we-create-p{
-  font-size: 48px;
+.home-page :is(.build-p, .our-work-p) {
+  margin: 0 0 0.75rem;
+  color: #5b3fd6;
+  font-size: clamp(0.75rem, 0.68rem + 0.24vw, 1.125rem);
   font-weight: 600;
-  width: 500px;
-  margin-top: 0;
-  margin-bottom: 0;
+  letter-spacing: 0.08em;
 }
 
-.first-block .aurora-is-p{
-  width: min(500px, 100%);
-  color: rgb(138, 138, 138);
+.hero-title {
+  max-width: 16ch;
+  margin: 0;
+  color: #171b2d;
+  font-size: clamp(2rem, 1.25rem + 2.05vw, 6.25rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
 }
 
-.first-block .first-block-buttons .view-our-work-button {
-  border: none;
-  background-color: #5B3FD6;
-  padding: 12px 20px;
-  color: rgb(231, 229, 243);
+.aurora-is-p {
+  max-width: 47ch;
+  margin: 1rem 0 0;
+  color: #53566b;
+  font-family: Inter, sans-serif;
+  font-size: clamp(1rem, 0.83rem + 0.25vw, 1.5rem);
+  line-height: 1.65;
+}
+
+.first-block-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: clamp(1.25rem, 1.5vw, 2.5rem);
+}
+
+.first-block-buttons button {
+  min-height: 44px;
+  padding: 0.65em 1.35em;
+  border: 1px solid #5b3fd6;
   border-radius: 6px;
+  font: inherit;
+  font-size: clamp(0.875rem, 0.77rem + 0.2vw, 1.25rem);
   font-weight: 600;
-  margin-right: 10px;
-}
-
-.first-block .first-block-buttons .view-our-work-button:hover{
-  background-color: rgb(91, 63, 214, 0.8);
-  transition: 0.25s;
   cursor: pointer;
+  transition: background-color 0.2s;
 }
 
-.first-block .first-block-buttons .learn-more-button {
-  border: 1px solid #5B3FD6;
-  background-color: rgb(231, 229, 243);
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
-  color: #5B3FD6;
-  border-radius: 6px;
-  font-weight: 600;
-  height: 39.2px;
+.view-our-work-button {
+  background-color: #5b3fd6;
+  color: white;
 }
 
-.first-block .first-block-buttons .learn-more-button:hover{
-  background-color: rgb(91, 63, 214, 0.1);
-  cursor: pointer;
-  transition: 0.25s;
+.view-our-work-button:hover {
+  background-color: #4930b6;
 }
 
-@media (max-width: 1200px){
-  .first-block{
-    flex: 0 0 45%;
-    min-width: 0;
-    padding-right: 24px;
-  }
-
-  .first-block .we-create-p{
-    width: 100%;
-    font-size: clamp(32px, 3.4vw, 48px);
-  }
+.learn-more-button {
+  background-color: transparent;
+  color: #5b3fd6;
 }
 
-@media (max-width: 768px){
-  .first-block-content{
-    flex-direction: column;
-    padding-left: 0;
+.learn-more-button:hover {
+  background-color: #ded9f3;
+}
+
+@media (max-width: 49rem) {
+  .first-block-content {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    padding-bottom: calc(0.75rem + var(--feature-overlap));
+    text-align: center;
   }
 
-  .first-block{
-    flex-basis: auto;
-    padding: 40px 24px 80px;
+  .hero-title,
+  .aurora-is-p {
+    margin-inline: auto;
   }
 
-  .first-block .we-create-p{
-    width: 100%;
-    font-size: 40px;
+  .first-block-buttons {
+    justify-content: center;
   }
 
-  .mountain-img-container{
-    flex: none;
-    width: 100%;
-    height: 260px;
-    min-width: 0;
+  .mountain-img {
+    width: min(100%, 34rem);
   }
 }

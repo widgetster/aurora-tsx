@@ -6,7 +6,7 @@ export function SecondBlock() {
   return (
     <div className="second-block">
       <div className="container">
-        <img className="icon" src="./icon/laptop.png" />
+        <img src="./icon/laptop.png" alt="" />
 
         <div className="feature-description">
           <p className="feature-p">Modern Design</p>
@@ -15,7 +15,7 @@ export function SecondBlock() {
       </div>
 
       <div className="container">
-        <img src="./icon/fast.png" />
+        <img src="./icon/fast.png" alt="" />
 
         <div className="feature-description">
           <p className="feature-p">Fast Performance</p>
@@ -24,7 +24,7 @@ export function SecondBlock() {
       </div>
 
       <div className="container">
-        <img className="icon" src="./icon/cellphone.png" />
+        <img src="./icon/cellphone.png" alt="" />
 
         <div className="feature-description">
           <p className="feature-p">Fully Responsive</p>
@@ -33,7 +33,7 @@ export function SecondBlock() {
       </div>
 
       <div className="container">
-        <img className="icon" src="./icon/code.png" />
+        <img src="./icon/code.png" alt="" />
 
         <div className="feature-description">
           <p className="feature-p">Clean Code</p>

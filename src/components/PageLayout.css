@@ -1,16 +1,9 @@
-.studio-layout {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 .studio-page {
   --studio-accent: #5B3FD6;
   --studio-ink: #171b2d;
   --studio-muted: #626577;
   --studio-lavender: rgb(231, 229, 243);
   --studio-line: #e5e5ef;
-  flex: 1;
   color: var(--studio-ink);
 }
 
@@ -19,12 +12,16 @@
 }
 
 .page-container {
-  width: min(var(--content-max-width), calc(100% - 2 * var(--page-gutter)));
+  width: var(--layout-width);
   margin-inline: auto;
 }
 
+.page-hero,
+.page-content {
+  padding-block: var(--section-spacing);
+}
+
 .page-hero {
-  padding-block: 64px;
   background-color: var(--studio-lavender);
 }
 
@@ -38,9 +35,9 @@
 }
 
 .studio-page h1 {
-  max-width: 820px;
+  max-width: 20ch;
   margin: 0;
-  font-size: clamp(32px, 4vw, 48px);
+  font-size: clamp(2rem, 1.35rem + 1.8vw, 5.5rem);
   font-weight: 600;
   line-height: 1.25;
   letter-spacing: -0.035em;
@@ -50,17 +47,13 @@
 .studio-page p {
   color: var(--studio-muted);
   font-family: Inter, sans-serif;
-  font-size: 16px;
+  font-size: clamp(1rem, 0.88rem + 0.14vw, 1.25rem);
   line-height: 1.75;
 }
 
 .studio-page .page-intro {
-  max-width: 610px;
+  max-width: 60ch;
   margin: 20px 0 0;
-}
-
-.page-content {
-  padding-block: 64px;
 }
 
 .studio-page h2,
@@ -302,11 +295,6 @@
 }
 
 @media (max-width: 760px) {
-  .page-hero,
-  .page-content {
-    padding-block: 40px;
-  }
-
   .about-grid,
   .contact-grid,
   .services-grid,

@@ -7,10 +7,10 @@ import { Footer } from "../../components/Footer"
 export function Home() {
 
   return (
-    <>
+    <div className="site-layout">
       <Header />
 
-      <main>
+      <main className="home-page">
         <FirstBlock />
 
         <SecondBlock />
@@ -22,6 +22,6 @@ export function Home() {
       <footer>
         <Footer />
       </footer>
-    </>
+    </div>
   )
 }

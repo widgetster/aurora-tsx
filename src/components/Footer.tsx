@@ -9,7 +9,7 @@ export function Footer() {
       <div className="ftr-first-block">
         <div className="ftr-first-column-container">
           <div className="ftr-logo-name-container">
-            <img className="ftr-logo-name-img" src="./icon/logo.png" />
+            <img className="site-logo" src="./icon/logo.png" alt="" />
             <p>AURORA</p>
           </div>
 
@@ -36,14 +36,14 @@ export function Footer() {
         <div>
           <p className="ftr-title-link-p">Services</p>
 
-          <p className="ftr-link-p">Web Desgin</p>
+          <p className="ftr-link-p">Web Design</p>
           <p className="ftr-link-p">Web Development</p>
           <p className="ftr-link-p">UI/UX Design</p>
           <p className="ftr-link-p">SEO Optimization</p>
           <p className="ftr-link-p">Maintenance</p>
         </div>
 
-        <div>
+        <div className="ftr-contact">
           <p className="ftr-title-link-p">Contact Us</p>
 
           <p className="ftr-link-contact-newsletter-p">hello@aurora.com</p>
@@ -53,14 +53,13 @@ export function Footer() {
 
         </div>
 
-        <div>
+        <div className="ftr-newsletter">
           <p className="ftr-title-link-p">Newsletter</p>
 
-          <p className="ftr-link-contact-newsletter-p">Stay Updated with our latest</p>
-          <p className="ftr-link-contact-newsletter-p">news and projects.</p>
+          <p className="ftr-link-contact-newsletter-p">Stay updated with our latest news and projects.</p>
 
-          <div>
-            <input type="text" className="ftr-enter-email" placeholder="Enter your email" />
+          <div className="ftr-newsletter-controls">
+            <input type="email" className="ftr-enter-email" aria-label="Email address" autoComplete="email" placeholder="Enter your email" />
             <button className="ftr-subscribe-button">Subscribe</button>
           </div>
 
@@ -68,7 +67,7 @@ export function Footer() {
         </div>
       </div>
 
-      <p className="ftr-copyright">&copy; 2026 Aurora Studio. ALl rights reserved.</p>
+      <p className="ftr-copyright">&copy; 2026 Aurora Studio. All rights reserved.</p>
 
     </div>
 
